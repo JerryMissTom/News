@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
         borderRadius:5,
         justifyContent: 'flex-start',
         flexDirection: 'row',
-        alignItems: 'center'
+        alignItems: 'center',
     },
     avatar: {
         width: 30,

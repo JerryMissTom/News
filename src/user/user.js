@@ -3,6 +3,7 @@ import {View, Text, StyleSheet} from 'react-native';
 import SearchHeader from './search-header';
 import Divide from '../common/divide';
 import UserInfo from './user-info';
+import Column from './column';
 
 class User extends Component {
     state = {}
@@ -10,9 +11,8 @@ class User extends Component {
         return (
             <View style={styles.container}>
                 <SearchHeader/>
-                <Divide/>
                 <UserInfo/>
-                <Divide/>
+                <Column/>
             </View>
         );
     }
@@ -24,6 +24,6 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         marginTop: 20,
-        backgroundColor: '#ffffff'
+        backgroundColor: '#ebebeb'
     }
 })

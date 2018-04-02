@@ -1,15 +1,16 @@
-import { View,Text,Image,StyleSheet ,TextInput} from 'react-native';
-import React, { Component } from 'react';
-
+import {View, Text, Image, StyleSheet, TextInput} from 'react-native';
+import React, {Component} from 'react';
 
 class SearchHeader extends Component {
-    state = {  }
+    state = {}
     render() {
         return (
-            <View style={styles.container}> 
-            <Image style={styles.searchIcon} source={require('../res/search.png')}></Image>
-            <TextInput style={styles.searchInput} placeholder={'搜索知乎内容'}></TextInput>
-            <Image style={styles.scanIcon} source={require('../res/scan.png')}></Image>
+            <View style={styles.container}>
+                <View style={styles.searchField}>
+                    <Image style={styles.searchIcon} source={require('../res/search.png')}></Image>
+                    <TextInput style={styles.searchInput} placeholder={'搜索知乎内容'}></TextInput>
+                    <Image style={styles.scanIcon} source={require('../res/scan.png')}></Image>
+                </View>
             </View>
         );
     }
@@ -18,29 +19,34 @@ class SearchHeader extends Component {
 export default SearchHeader;
 
 const styles = StyleSheet.create({
-    container:{
-        height:40,
-        backgroundColor:'#ebebeb',
-        padding:5,
-        margin:10,
-        borderRadius:5,
-        flexDirection:'row',
-        justifyContent:'space-between',
-        alignItems:'center',
+    container: {
+        backgroundColor: '#ffffff',
+        borderBottomWidth: 1,
+        borderBottomColor: '#c2c2c2'
     },
-    searchIcon:{
-        width:20,
-        height:20,
-        marginLeft:10,
+    searchField: {
+        height: 40,
+        backgroundColor: '#ebebeb',
+        padding: 5,
+        margin: 10,
+        borderRadius: 5,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center'
     },
-    searchInput:{
-        flex:1,
-        marginLeft:10,
-        fontSize:18
+    searchIcon: {
+        width: 20,
+        height: 20,
+        marginLeft: 10
     },
-    scanIcon:{
-        width:30,
-        height:30,
-        marginRight:10,
+    searchInput: {
+        flex: 1,
+        marginLeft: 10,
+        fontSize: 18
+    },
+    scanIcon: {
+        width: 30,
+        height: 30,
+        marginRight: 10
     }
 })
