@@ -114,7 +114,7 @@ const Tab = TabNavigator({
     //是否在更改标签时显示动画
     animationEnabled: false,
     //是否允许在标签之间进行滑动
-    swipeEnabled: true,
+    swipeEnabled: false,
     //按 back 键是否跳转到第一个Tab(首页)， none 为不跳转
     backBehavior: "none",
     //设置Tab标签的属性
