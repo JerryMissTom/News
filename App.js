@@ -51,10 +51,10 @@ const Tab = TabNavigator({
             },
             headerBackTitle: null,
             headerStyle: {
-                backgroundColor: '#F37021'
+                backgroundColor: '#f7f7f7'
             }, //导航栏的样式
             headerTitleStyle: { //导航栏文字的样式
-                color: 'white',
+                color: '#303030',
                 //设置标题的大小
                 fontSize: 18,
                 //居中显示
