@@ -58,25 +58,25 @@ const styles = StyleSheet.create({
     itemContainer: {
         height: 70,
         width: 250,
-        marginRight:10,
+        marginRight: 10,
         flexDirection: 'row',
         justifyContent: 'space-around',
         alignItems: 'center',
         backgroundColor: 'grey',
-        borderRadius: 5,
+        borderRadius: 5
     },
     title: {
-        fontSize: 14, 
-        width:180
+        fontSize: 14,
+        width: 180
     },
     desc: {
         fontSize: 12,
-        width:180
+        width: 180
     },
     img: {
         width: 40,
         height: 60,
-        backgroundColor:'red',
-        borderRadius: 10,
+        backgroundColor: 'red',
+        borderRadius: 10
     }
 })
