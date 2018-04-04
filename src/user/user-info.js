@@ -19,11 +19,11 @@ export default UserInfo;
 const styles = StyleSheet.create({
     container: {
         paddingLeft: 12,
-        paddingRight:12,
-        paddingTop:10,
-        paddingBottom:10,
-        marginTop:5,
-        backgroundColor:'#ffffff',
+        paddingRight: 12,
+        paddingTop: 10,
+        paddingBottom: 10,
+        marginTop: 5,
+        backgroundColor: '#ffffff',
         borderTopWidth: 1,
         borderTopColor: '#e0e0e0',
         borderBottomWidth: 1,

@@ -11,11 +11,11 @@ class Column extends Component {
         '已购',
         '礼券'
     ];
+    
     listItems = this
         .items
-        .map((item,index) => 
-             <ColumnItem key={index} desc={item}/>
-        );
+        .map((item, index) => <ColumnItem key={index} desc={item}/>);
+
     render() {
         return (
             <View style={styles.container}>

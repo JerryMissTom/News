@@ -23,10 +23,10 @@ const styles = StyleSheet.create({
         height: 60,
         backgroundColor: '#f7f7f7',
         padding: 12,
-        borderRadius:5,
+        borderRadius: 5,
         justifyContent: 'flex-start',
         flexDirection: 'row',
-        alignItems: 'center',
+        alignItems: 'center'
     },
     avatar: {
         width: 30,
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     userInfo: {
         marginLeft: 12,
         justifyContent: 'space-around',
-        height:40
-       
+        height: 40
+
     }
 })

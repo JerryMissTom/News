@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Image, Text, View} from 'react-native';
 import {TabNavigator, StackNavigator} from 'react-navigation'
-import Home from './src/home';
+import Home from './src/home/home';
 import Detail from './src/detail';
 import Setting from './src/setting';
 import User from './src/user/user';
-import Girl from './src/girl';
+import Girl from './src/girl/girl';
 
 const Tab = TabNavigator({
     Home: {

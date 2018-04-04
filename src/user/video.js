@@ -3,7 +3,7 @@ import {Text, View, Image, StyleSheet, ScrollView} from 'react-native';
 import Title from './title';
 class Video extends Component {
 
- items=['延时摄影','美食模板','好物分享模板','DIY手工模板'];
+    items = ['延时摄影', '美食模板', '好物分享模板', 'DIY手工模板'];
 
     render() {
         return (
@@ -13,10 +13,10 @@ class Video extends Component {
                     horizontal={true}
                     showsHorizontalScrollIndicator={false}
                     style={styles.scrollview}>
-                   {this.items.map((item,index)=>
-                    <ScrollItem key={index}  desc={item} />
-                   )}
-                   
+                    {this
+                        .items
+                        .map((item, index) => <ScrollItem key={index} desc={item}/>)}
+
                 </ScrollView>
             </View>
         );
@@ -24,7 +24,7 @@ class Video extends Component {
 }
 
 class ScrollItem extends Component {
-    constructor(props){
+    constructor(props) {
         super(props)
     }
     render() {
@@ -59,8 +59,8 @@ const styles = StyleSheet.create({
         backgroundColor: 'red',
         marginRight: 10,
         borderRadius: 10,
-        paddingBottom:10,
-        justifyContent:'flex-end',
-        alignItems:'center'
+        paddingBottom: 10,
+        justifyContent: 'flex-end',
+        alignItems: 'center'
     }
 })
