@@ -7,7 +7,7 @@ import {
     Image,
     Dimensions
 } from 'react-native';
-import Constant from './common/constant';
+import Constant from '../common/constant';
 
 const deviceWidth = Dimensions
     .get('window')
