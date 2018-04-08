@@ -12,7 +12,7 @@ const Tab = TabNavigator({
         screen: Home,
         navigationOptions: {
             //stackNavigator的属性
-            headerTitle: '新闻',
+            headerTitle: '通讯录',
             gestureResponseDistance: {
                 horizontal: 300
             },
@@ -28,7 +28,7 @@ const Tab = TabNavigator({
                 alignSelf: 'center'
             },
             //tab 的属性
-            tabBarLabel: '新闻',
+            tabBarLabel: '通讯录',
             tabBarIcon: ({tintColor}) => (<Image
                 source={require('./src/res/home.png')}
                 style={[
