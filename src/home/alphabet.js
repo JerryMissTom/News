@@ -45,7 +45,7 @@ class Alphabet extends Component {
                 {alphabet.map((item, index) => {
                     return (
                         <TouchableOpacity
-                            onPressIn={() => this.onPressLetter(index)}
+                            onPressIn={() => this.onPressLetter(item,index)}
                             onPressOut={() => this.onPressOut()}
                             activeOpacity={1}
                             key={index}>
@@ -62,7 +62,8 @@ class Alphabet extends Component {
         );
     }
 
-    onPressLetter = (index) => {
+    onPressLetter = (item,index) => {
+        this.props.onSelectLetter(item);
         this.setState({selectIndex: index});
     }
 

@@ -11,8 +11,23 @@ const deviceHeiht = Dimensions
     .height;
 class Home extends Component {
 
+    setTimeout = null;
+    constructor(props) {
+        super(props)
+        this.state = {
+            selectLetter: ''
+        }
+    }
+
     render() {
 
+        let view = this.state.selectLetter.length > 0
+            ? (
+                <View style={styles.letterField}>
+                    <Text style={styles.letter}>{this.state.selectLetter}</Text>
+                </View>
+            )
+            : null;
         return (
             <View style={styles.container}>
                 <SearchHeader/>
@@ -23,14 +38,22 @@ class Home extends Component {
                         renderSectionHeader={({section}) => this.getSectionHeader(section)}
                         sections={Constant.sections}/>
                     <View style={styles.alphabetField}>
-                        <Alphabet/>
+                        <Alphabet onSelectLetter={(item) => this.selectLetter(item)}/>
                     </View>
-                    <View style={styles.letterField}>
-                        <Text style={styles.letter}>5</Text>
-                    </View>
+                    {view}
                 </View>
             </View>
         );
+    }
+
+    selectLetter = (text) => {
+        if (this.setTimeout != null) {
+            clearTimeout(this.setTimeout);
+        }
+        this.setState({selectLetter: text});
+        this.setTimeout = setTimeout(() => {
+            this.setState({selectLetter: ''});
+        }, 500);
     }
 
     getSectionHeader = (section) => {
@@ -98,5 +121,4 @@ const styles = StyleSheet.create({
         height: 30,
         justifyContent: 'center'
     }
-
 });

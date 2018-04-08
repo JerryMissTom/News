@@ -13,13 +13,12 @@ class SearchHeader extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            showDeleteIcon: false,
             textValue: ''
         }
     }
 
     render() {
-        let deleteView = this.state.showDeleteIcon
+        let deleteView = this.state.textValue.length > 0
             ? this.getDeleteView()
             : null;
         return (
@@ -37,14 +36,11 @@ class SearchHeader extends Component {
     }
 
     searchName = (text) => {
-        this.setState({
-            showDeleteIcon: text.length > 0,
-            textValue: text
-        });
+        this.setState({textValue: text});
     }
 
     clearText = () => {
-        this.setState({showDeleteIcon: false, textValue: ''});
+        this.setState({textValue: ''});
     }
 
     getDeleteView = () => {
