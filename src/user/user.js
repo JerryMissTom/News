@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {View, Text, StyleSheet, ScrollView} from 'react-native';
-import SearchHeader from './search-header';
-import UserInfo from './user-info';
+import SearchHeader from './searchHeader';
+import UserInfo from './userInfo';
 import Column from './column';
 import Video from './video';
 import Idea from './idea';

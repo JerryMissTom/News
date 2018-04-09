@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {View, Text, Image, StyleSheet} from 'react-native';
-import ColumnItem from './column-item';
+import ColumnItem from './columnItem';
 
 class Column extends Component {
     items = [

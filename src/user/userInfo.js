@@ -1,7 +1,7 @@
 import {View, Image, StyleSheet} from 'react-native';
 import React, {Component} from 'react';
 import Avatar from './avatar';
-import UserData from './user-data';
+import UserData from './userData';
 class UserInfo extends Component {
     state = {}
     render() {

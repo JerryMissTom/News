@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {View, Text, StyleSheet, Dimensions, SectionList} from 'react-native';
 import Alphabet from './alphabet';
-import SearchHeader from './search-header';
+import SearchHeader from './searchHeader';
 import Constant from '../common/constant';
 const deviceWidth = Dimensions
     .get('window')
